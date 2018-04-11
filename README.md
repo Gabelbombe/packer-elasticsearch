@@ -12,10 +12,10 @@ This also installs [Consul](https://www.consul.io/). This will need to be config
 idea to join an existing consul cluster.
 
 ```
-packer build \
-  -var 'aws_access_key=your_key' \
+packer build                        \
+  -var 'aws_access_key=your_key'    \
   -var 'aws_secret_key=your_secret' \
-  elastic.json
+elastic.json
 ```
 
 Or
@@ -41,7 +41,6 @@ packer build -var-file='path/to/packer_vars.json' elastic.json
 * consul_version (defaults to `0.6.3`)
 * consul_template_version (defaults to `0.12.1`)
 
-###Troubleshooting
+### Troubleshooting
 
 * Make sure you have set the AWS region and the correct source AMI (Amazon linux recommended) for that region
-
